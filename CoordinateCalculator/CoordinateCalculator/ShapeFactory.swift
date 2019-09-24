@@ -34,6 +34,12 @@ struct ShapeFactory {
             let pointB = MyPoint(x: points[1].x, y: points[1].y)
             let pointC = MyPoint(x: points[2].x, y: points[2].y)
             shape = MyTriangle(pointA: pointA, pointB: pointB, pointC: pointC)
+        case 4:
+            let pointA = MyPoint(x: points[0].x, y: points[0].y)
+            let pointB = MyPoint(x: points[1].x, y: points[1].y)
+            let pointC = MyPoint(x: points[2].x, y: points[2].y)
+            let pointD = MyPoint(x: points[2].x, y: points[2].y)
+            shape = MyRect(pointA: pointA, pointB: pointB, pointC: pointC, pointD: pointD)
             
         default:
             // Will test Later ater implementing step-3 requrement
